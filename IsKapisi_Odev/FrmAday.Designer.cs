@@ -30,7 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAday));
             panel1 = new Panel();
-            label4 = new Label();
+            pictureBox6 = new PictureBox();
+            button5 = new Button();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -43,15 +44,15 @@
             button1 = new Button();
             panel2 = new Panel();
             pictureBox7 = new PictureBox();
+            label4 = new Label();
             label1 = new Label();
             panel3 = new Panel();
             label3 = new Label();
             label2 = new Label();
             panel4 = new Panel();
             pictureBox8 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            button5 = new Button();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -62,7 +63,6 @@
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -87,16 +87,28 @@
             panel1.Size = new Size(355, 674);
             panel1.TabIndex = 0;
             // 
-            // label4
+            // pictureBox6
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(104, 99);
-            label4.Name = "label4";
-            label4.Size = new Size(152, 27);
-            label4.TabIndex = 11;
-            label4.Text = "Aday Sayfası";
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(3, 588);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(76, 76);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 32;
+            pictureBox6.TabStop = false;
+            // 
+            // button5
+            // 
+            button5.Dock = DockStyle.Top;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.ForeColor = Color.Gainsboro;
+            button5.Location = new Point(0, 582);
+            button5.Name = "button5";
+            button5.Size = new Size(355, 90);
+            button5.TabIndex = 11;
+            button5.Text = "Girişe Dön";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // pictureBox5
             // 
@@ -236,6 +248,17 @@
             pictureBox7.TabIndex = 12;
             pictureBox7.TabStop = false;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(104, 99);
+            label4.Name = "label4";
+            label4.Size = new Size(152, 27);
+            label4.TabIndex = 11;
+            label4.Text = "Aday Sayfası";
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -303,33 +326,9 @@
             pictureBox8.TabIndex = 0;
             pictureBox8.TabStop = false;
             // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(3, 588);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(76, 76);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 32;
-            pictureBox6.TabStop = false;
-            // 
-            // button5
-            // 
-            button5.Dock = DockStyle.Top;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.ForeColor = Color.Gainsboro;
-            button5.Location = new Point(0, 582);
-            button5.Name = "button5";
-            button5.Size = new Size(355, 90);
-            button5.TabIndex = 11;
-            button5.Text = "Girişe Dön";
-            button5.UseVisualStyleBackColor = true;
-            button5.Click += button5_Click;
-            // 
             // FrmAday
             // 
-            AutoScaleDimensions = new SizeF(18F, 36F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             ClientSize = new Size(1711, 674);
             Controls.Add(panel4);
@@ -342,6 +341,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form3";
             panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -355,7 +355,6 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 

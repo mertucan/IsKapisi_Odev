@@ -91,7 +91,7 @@ namespace IsKapisi_Odev
 
             con.Open();
 
-            if(checkBox1.Checked == true)
+            if (checkBox1.Checked == true)
             {
                 string aranan = txtAra.Text;
 

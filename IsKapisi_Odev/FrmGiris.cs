@@ -41,7 +41,7 @@ namespace IsKapisi_Odev
         }
 
         private void textBox1_MouseClick(object sender, MouseEventArgs e)
-        {           
+        {
             textBox1.Clear();
             label4.Text = "E-Posta";
         }

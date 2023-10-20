@@ -406,8 +406,7 @@
             // 
             // FrmKayit
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             ClientSize = new Size(705, 977);
             Controls.Add(pictureBox11);

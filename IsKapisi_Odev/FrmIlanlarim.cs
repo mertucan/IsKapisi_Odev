@@ -22,7 +22,7 @@ namespace IsKapisi_Odev
         {
             SqlConnection con1 = new SqlConnection(@"Data Source=.;Initial Catalog=IsKapisi;Integrated Security=True");
 
-            string query = "SELECT Ilan.IlanID ,CONCAT(Isveren.Ad, ' ', Isveren.Soyad) AS Isveren, Ilan.Gereksinimler FROM Ilan INNER JOIN Isveren ON Isveren.IsverenID = Ilan.IsverenID WHERE Isveren.IsverenID ="+FrmGiris.isveren;
+            string query = "SELECT Ilan.IlanID ,CONCAT(Isveren.Ad, ' ', Isveren.Soyad) AS Isveren, Ilan.Gereksinimler FROM Ilan INNER JOIN Isveren ON Isveren.IsverenID = Ilan.IsverenID WHERE Isveren.IsverenID =" + FrmGiris.isveren;
 
             SqlDataAdapter da = new SqlDataAdapter(query, con1);
 

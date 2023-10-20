@@ -56,7 +56,7 @@ namespace IsKapisi_Odev
             string sorgu1 = "SELECT * FROM Aday WHERE AdayID = '" + FrmGiris.id.ToString() + "'";
 
             con1.Open();
-            
+
             SqlCommand cmd1 = new SqlCommand(sorgu1, con1);
 
             SqlDataReader read1 = cmd1.ExecuteReader();
@@ -72,7 +72,7 @@ namespace IsKapisi_Odev
         private void button2_Click(object sender, EventArgs e)
         {
             sifreGetir();
-            
+
             if (txtYeniSifre.Text == txtTekrar.Text && sifre == txtEskiSifre.Text)
             {
                 SqlConnection con1 = new SqlConnection(@"Data Source=.;Initial Catalog=IsKapisi;Integrated Security=True");

@@ -213,8 +213,7 @@
             // 
             // FrmIsverenProfil
             // 
-            AutoScaleDimensions = new SizeF(14F, 27F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             ClientSize = new Size(1356, 542);
             Controls.Add(groupBox1);

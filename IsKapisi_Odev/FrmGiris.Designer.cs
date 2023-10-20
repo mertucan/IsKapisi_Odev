@@ -291,10 +291,9 @@
             timer2.Interval = 1;
             timer2.Tick += timer2_Tick;
             // 
-            // Form1
+            // FrmGiris
             // 
-            AutoScaleDimensions = new SizeF(18F, 36F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             ClientSize = new Size(705, 977);
             Controls.Add(pictureBox6);
@@ -319,7 +318,7 @@
             Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
-            Name = "Form1";
+            Name = "FrmGiris";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load_1;

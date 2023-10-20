@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            txtEgitimSeviyesi = new TextBox();
+            txtDepartman = new TextBox();
             button1 = new Button();
             panel7 = new Panel();
             txtTanim = new TextBox();
@@ -46,8 +48,6 @@
             label2 = new Label();
             cmbCalismaSekli = new ComboBox();
             panel2 = new Panel();
-            txtDepartman = new TextBox();
-            txtEgitimSeviyesi = new TextBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -78,6 +78,22 @@
             groupBox1.TabIndex = 85;
             groupBox1.TabStop = false;
             groupBox1.Text = "İlan Bilgileri";
+            // 
+            // txtEgitimSeviyesi
+            // 
+            txtEgitimSeviyesi.BorderStyle = BorderStyle.None;
+            txtEgitimSeviyesi.Location = new Point(212, 306);
+            txtEgitimSeviyesi.Name = "txtEgitimSeviyesi";
+            txtEgitimSeviyesi.Size = new Size(220, 28);
+            txtEgitimSeviyesi.TabIndex = 86;
+            // 
+            // txtDepartman
+            // 
+            txtDepartman.BorderStyle = BorderStyle.None;
+            txtDepartman.Location = new Point(208, 235);
+            txtDepartman.Name = "txtDepartman";
+            txtDepartman.Size = new Size(224, 28);
+            txtDepartman.TabIndex = 85;
             // 
             // button1
             // 
@@ -242,26 +258,9 @@
             panel2.Size = new Size(222, 1);
             panel2.TabIndex = 66;
             // 
-            // txtDepartman
-            // 
-            txtDepartman.BorderStyle = BorderStyle.None;
-            txtDepartman.Location = new Point(208, 235);
-            txtDepartman.Name = "txtDepartman";
-            txtDepartman.Size = new Size(224, 28);
-            txtDepartman.TabIndex = 85;
-            // 
-            // txtEgitimSeviyesi
-            // 
-            txtEgitimSeviyesi.BorderStyle = BorderStyle.None;
-            txtEgitimSeviyesi.Location = new Point(212, 306);
-            txtEgitimSeviyesi.Name = "txtEgitimSeviyesi";
-            txtEgitimSeviyesi.Size = new Size(220, 28);
-            txtEgitimSeviyesi.TabIndex = 86;
-            // 
             // FrmIlan
             // 
-            AutoScaleDimensions = new SizeF(14F, 27F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
             ClientSize = new Size(1356, 542);
             Controls.Add(groupBox1);

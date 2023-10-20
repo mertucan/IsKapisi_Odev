@@ -48,7 +48,7 @@ namespace IsKapisi_Odev
                 string column3Value = row.Cells["Gereksinimler"].Value.ToString();
                 string column4Value = row.Cells["Durum"].Value.ToString();
 
-                MessageBox.Show("Ad: " + column1Value + "\nSoyad: " + column2Value + "\nGereksinimler:" + column3Value + "\nBaşvuru Durumu:"+column4Value);
+                MessageBox.Show("Ad: " + column1Value + "\nSoyad: " + column2Value + "\nGereksinimler:" + column3Value + "\nBaşvuru Durumu:" + column4Value);
             }
         }
     }
